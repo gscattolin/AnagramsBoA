@@ -21,4 +21,9 @@ class AnagramsTest extends AnyFunSuite {
     val res = Anagrams.findAnagrams("Backa", "/words1.txt")
     assert(res.length == 1)
   }
+
+  test("words2.txt  contains three  Backa anagrams") {
+    val res = Anagrams.findAnagrams("Backa", "/words2.txt")
+    assert(res.length == 3)
+  }
 }
